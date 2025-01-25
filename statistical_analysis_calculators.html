@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Statistical and Data Analysis Calculators</title>
+  <link rel="stylesheet" href="css/statistical_data_analysis.css">
+  <script src="popup.js" defer></script>
+  <script src="js/statistical_data_analysis_calculators.js" defer></script>
+
+</head>
+<body>
+  <header>
+    <a class="home-button" href="home.html">&#8592; Back to Home</a>
+  </header>
+
+  <h1>Statistical and Data Analysis Calculators</h1>
+
+  <main>
+    <!-- t-Test Calculator -->
+    <section>
+      <h2>t-Test Calculator</h2>
+      <label for="t-group1">Group 1 Data (comma-separated):</label>
+      <input type="text" id="t-group1">
+      <label for="t-group2">Group 2 Data (comma-separated):</label>
+      <input type="text" id="t-group2">
+      <p id="t-test-result">Result will appear here.</p>
+      <button id="t-test-btn">Calculate</button>
+    </section>
+
+    <!-- ANOVA Calculator -->
+    <section>
+      <h2>ANOVA Calculator</h2>
+      <label for="anova-groups">Group Data (semicolon-separated for each group):</label>
+      <input type="text" id="anova-groups">
+      <p id="anova-result">Result will appear here.</p>
+      <button id="anova-btn">Calculate</button>
+    </section>
+
+    <!-- Correlation Calculator -->
+    <section>
+      <h2>Correlation Calculator</h2>
+      <label for="x-values">X Values (comma-separated):</label>
+      <input type="text" id="x-values">
+      <label for="y-values">Y Values (comma-separated):</label>
+      <input type="text" id="y-values">
+      <p id="correlation-result">Result will appear here.</p>
+      <button id="correlation-btn">Calculate</button>
+    </section>
+
+    <!-- Chi-Square Calculator -->
+    <section>
+      <h2>Chi-Square Calculator</h2>
+      <label for="observed">Observed Data (comma-separated):</label>
+      <input type="text" id="observed">
+      <label for="expected">Expected Data (comma-separated):</label>
+      <input type="text" id="expected">
+      <p id="chi-square-result">Result will appear here.</p>
+      <button id="chi-square-btn">Calculate</button>
+    </section>
+  </main>
+</body>
+</html>

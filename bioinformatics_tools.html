@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bioinformatics Tools</title>
+  <link rel="stylesheet" href="css/bioinformatics_tools.css">
+  <script src="popup.js" defer></script>
+  <script src="js/bioinformatics_tools.js" defer></script>
+</head>
+<body>
+  <header>
+    <a class="home-button" href="home.html">&#8592; Back to Home</a>
+  </header>
+
+  <h1>Bioinformatics Tools</h1>
+
+  <main>
+    <!-- Codon Optimization Calculator -->
+    <section>
+      <h2>Codon Optimization Calculator</h2>
+      <label for="codon-sequence">DNA Sequence:</label>
+      <input type="text" id="codon-sequence">
+      <p id="codon-result">Codon optimization result will appear here.</p>
+      <button id="codon-btn">Optimize</button>
+    </section>
+
+    <!-- Protein Molecular Weight Calculator -->
+    <section>
+      <h2>Protein Molecular Weight Calculator</h2>
+      <label for="protein-sequence">Protein Sequence (1-letter codes):</label>
+      <input type="text" id="protein-sequence">
+      <p id="protein-result">Protein molecular weight result will appear here.</p>
+      <button id="protein-btn">Calculate</button>
+    </section>
+
+    <!-- Sequence Alignment Scorer -->
+    <section>
+      <h2>Sequence Alignment Scorer</h2>
+      <label for="seq1">Sequence 1:</label>
+      <input type="text" id="seq1">
+      <label for="seq2">Sequence 2:</label>
+      <input type="text" id="seq2">
+      <p id="alignment-result">Alignment score result will appear here.</p>
+      <button id="alignment-btn">Score</button>
+    </section>
+
+    <!-- ORF Finder -->
+    <section>
+      <h2>ORF Finder</h2>
+      <label for="orf-sequence">DNA Sequence:</label>
+      <input type="text" id="orf-sequence">
+      <p id="orf-result">Open Reading Frames (ORFs) will appear here.</p>
+      <button id="orf-btn">Find ORFs</button>
+    </section>
+  </main>
+</body>
+</html>

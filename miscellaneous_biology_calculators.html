@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Miscellaneous Biology Calculators</title>
+  <link rel="stylesheet" href="css/miscellaneous_biology_calculators.css">
+  <script src="popup.js" defer></script>
+  <script src="js/miscellaneous_biology_calculators.js" defer></script>
+
+</head>
+<body>
+  <header>
+    <a class="home-button" href="home.html">&#8592; Back to Home</a>
+  </header>
+
+  <h1>Miscellaneous Biology Calculators</h1>
+
+  <main>
+    <!-- Unit Conversion Tools -->
+    <section>
+      <h2>Unit Conversion Tools</h2>
+      <label for="value-to-convert">Value to Convert:</label>
+      <input type="number" id="value-to-convert" step="any">
+      <label for="conversion-type">Conversion Type:</label>
+      <select id="conversion-type">
+        <option value="ml-to-l">mL to L</option>
+        <option value="ng-to-mcg">ng to µg</option>
+        <option value="other">Other</option>
+      </select>
+      <p id="conversion-result">Conversion result will appear here.</p>
+      <button id="conversion-btn">Convert</button>
+    </section>
+
+    <!-- Concentration-Time Decay Calculator -->
+    <section>
+      <h2>Concentration-Time Decay Calculator</h2>
+      <label for="initial-concentration">Initial Concentration:</label>
+      <input type="number" id="initial-concentration" step="any">
+      <label for="decay-rate">Decay Rate:</label>
+      <input type="number" id="decay-rate" step="any">
+      <label for="time-elapsed">Time Elapsed:</label>
+      <input type="number" id="time-elapsed" step="any">
+      <p id="decay-result">Decay result will appear here.</p>
+      <button id="decay-btn">Calculate</button>
+    </section>
+
+    <!-- Oxygen Consumption Rate Calculator -->
+    <section>
+      <h2>Oxygen Consumption Rate Calculator</h2>
+      <label for="o2-volume">Oxygen Volume (mL):</label>
+      <input type="number" id="o2-volume" step="any">
+      <label for="time">Time (minutes):</label>
+      <input type="number" id="time" step="any">
+      <p id="oxygen-consumption-result">Oxygen consumption rate will appear here.</p>
+      <button id="oxygen-consumption-btn">Calculate</button>
+    </section>
+  </main>
+</body>
+</html>

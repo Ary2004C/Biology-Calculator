@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Genetics and Evolutionary Biology Calculators</title>
+  <link rel="stylesheet" href="css/genetics_evolution_biology.css">
+  <script src="popup.js" defer></script>
+  <script src="js/genetics_evolutionary_biology_calculators.js" defer></script>
+
+</head>
+<body>
+  <header>
+    <a class="home-button" href="home.html">&#8592; Back to Home</a>
+  </header>
+
+  <h1>Genetics and Evolutionary Biology Calculators</h1>
+
+  <main>
+    <!-- Punnett Square Calculator -->
+    <section>
+      <h2>Punnett Square Calculator</h2>
+      <label for="parent1-genotype">Parent 1 Genotype:</label>
+      <input type="text" id="parent1-genotype">
+      <label for="parent2-genotype">Parent 2 Genotype:</label>
+      <input type="text" id="parent2-genotype">
+      <p id="punnett-result">Result will appear here.</p>
+      <button id="punnett-btn">Calculate</button>
+    </section>
+
+    <!-- Mutation Rate Calculator -->
+    <section>
+      <h2>Mutation Rate Calculator</h2>
+      <label for="total-bases">Total Bases:</label>
+      <input type="number" id="total-bases" step="any">
+      <label for="mutations">Number of Mutations:</label>
+      <input type="number" id="mutations" step="any">
+      <p id="mutation-result">Mutation rate will appear here.</p>
+      <button id="mutation-btn">Calculate</button>
+    </section>
+
+    <!-- Phylogenetic Distance Calculator -->
+    <section>
+      <h2>Phylogenetic Distance Calculator</h2>
+      <label for="sequence1">Sequence 1:</label>
+      <input type="text" id="sequence1">
+      <label for="sequence2">Sequence 2:</label>
+      <input type="text" id="sequence2">
+      <p id="phylogenetic-result">Phylogenetic distance will appear here.</p>
+      <button id="phylogenetic-btn">Calculate</button>
+    </section>
+  </main>
+</body>
+</html>

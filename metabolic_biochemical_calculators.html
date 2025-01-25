@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Metabolic and Biochemical Calculators</title>
+  <link rel="stylesheet" href="css/metabolic_biochemical_calculator.css">
+  <script src="popup.js" defer></script>
+  <script src="js/metabolic_biochemical_calculators.js" defer></script>
+</head>
+<body>
+  <header>
+    <a class="home-button" href="home.html">&#8592; Back to Home</a>
+  </header>
+
+  <h1>Metabolic and Biochemical Calculators</h1>
+
+  <main>
+    <!-- pH and pKa Calculator -->
+    <section>
+      <h2>pH and pKa Calculator</h2>
+      <label for="acid-concentration">Acid Concentration (mol/L):</label>
+      <input type="number" id="acid-concentration" step="any">
+      <label for="base-concentration">Base Concentration (mol/L):</label>
+      <input type="number" id="base-concentration" step="any">
+      <label for="pka-value">pKa Value:</label>
+      <input type="number" id="pka-value" step="any">
+      <p id="ph-pka-result">Result will appear here.</p>
+      <button id="ph-pka-btn">Calculate</button>
+    </section>
+
+    <!-- Metabolite Concentration Calculator -->
+    <section>
+      <h2>Metabolite Concentration Calculator</h2>
+      <label for="metabolite-amount">Amount of Metabolite (mol):</label>
+      <input type="number" id="metabolite-amount" step="any">
+      <label for="solution-volume">Solution Volume (L):</label>
+      <input type="number" id="solution-volume" step="any">
+      <p id="metabolite-result">Result will appear here.</p>
+      <button id="metabolite-btn">Calculate</button>
+    </section>
+
+    <!-- Respiratory Quotient Calculator -->
+    <section>
+      <h2>Respiratory Quotient Calculator</h2>
+      <label for="co2-produced">CO2 Produced (mol):</label>
+      <input type="number" id="co2-produced" step="any">
+      <label for="o2-consumed">O2 Consumed (mol):</label>
+      <input type="number" id="o2-consumed" step="any">
+      <p id="respiratory-result">Result will appear here.</p>
+      <button id="respiratory-btn">Calculate</button>
+    </section>
+  </main>
+</body>
+</html>
